@@ -1,11 +1,6 @@
-// Constructor function 
-function Person(firstName, lastName, dob) {
-    this.firstName = firstName,
-    this.lastName = lastName,
-    this.dob = dob
-}
+const btn = document.querySelector('.btn')
 
-// Instatiate object
-const person1 = new Person ('John', 'Doe', '11/09/1993')
-
-console.log(person1)
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('#my-form').style.background = '#ccc'
+})
